@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ансамбль Звартноц — Армянские Народные Танцы</title>
+<script>
+(function(){
+  var k='zvartnots-theme';
+  try{
+    var t=localStorage.getItem(k);
+    if(t!=='dark'&&t!=='light')
+      t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+    document.documentElement.setAttribute('data-theme',t);
+  }catch(e){
+    document.documentElement.setAttribute('data-theme','light');
+  }
+})();
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nb">
+  <a href="#" class="nb">
+    <img src="assets/images/logo.png" alt="Звартноц">
+    <span class="nbt">ЗВАРТНОЦ</span>
+  </a>
+  <ul class="nl-list">
+    <li><a href="#about">О нас</a></li>
+    <li><a href="#team">Руководство</a></li>
+    <li><a href="#events">Концерты</a></li>
+    <li><a href="#gallery">Галерея</a></li>
+    <li><a href="#payment">Оплата</a></li>
+    <li><a href="#contact">Контакт</a></li>
+  </ul>
+  <div class="nav-end">
+    <button type="button" class="theme-btn" id="themeBtn" title="Тема оформления" aria-label="Переключить тему">
+      <span class="theme-ico theme-ico-moon" aria-hidden="true">🌙</span>
+      <span class="theme-ico theme-ico-sun" aria-hidden="true">☀️</span>
+    </button>
+    <button class="burger" id="bgr"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob-menu" id="mm">
+  <button class="mob-close" id="mc">✕</button>
+  <a href="#about"   onclick="cm()">О нас</a>
+  <a href="#team"    onclick="cm()">Руководство</a>
+  <a href="#events"  onclick="cm()">Концерты</a>
+  <a href="#gallery" onclick="cm()">Галерея</a>
+  <a href="#payment" onclick="cm()">Оплата</a>
+  <a href="#contact" onclick="cm()">Контакт</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hbg"></div>
+  <div class="hring"></div><div class="hring"></div><div class="hring"></div>
+  
+  <div class="hcnt">
+    <img src="assets/images/logo.png" alt="Логотип Звартноц" class="hlogo">
+    <div class="heyb">Армянский народный ансамбль</div>
+    <h1 class="htit">ЗВАРТНОЦ</h1>
+    <div class="harm">Զվարթնոց</div>
+    <p class="hsub">Хранители живого наследия армянского танца —<br>от величественного Берда до огненного Шалахо,<br>мы несём душу Армении через движение.</p>
+    <div class="hbtns">
+      <a href="#events"  class="btn-p">Ближайшие концерты</a>
+      <a href="#payment" class="btn-o">Записаться</a>
+    </div>
+  </div>
+  <div class="hflags">
+    <div style="background:#D90012"></div>
+    <div style="background:#0033A0"></div>
+    <div style="background:#FF9E1B"></div>
+  </div>
+</section>
+
+<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
+
+<!-- ABOUT -->
+<div class="about-wrap" id="about">
+<div class="sec">
+  <div class="agrid">
+    <div class="atext">
+      <div class="slbl">История ансамбля</div>
+      <h2 class="stit">Душа <em>Армении</em><br>в каждом движении</h2>
+      <p>Ансамбль <strong>«Звартноц»</strong> — живое воплощение тысячелетней культуры армянского народа. Наше имя восходит к легендарному храму VII века — <em>«Храму Бдящих Сил»</em>.</p>
+      <p>Мы бережно сохраняем и популяризируем <strong>армянский народный танец</strong> — от торжественных хороводов до зажигательных свадебных обрядов, от лирических женских до мощных мужских постановок.</p>
+      <p>Каждый костюм, каждый жест, каждый ритм — послание из глубины веков, которое мы с гордостью передаём новым поколениям.</p>
+      <div style="margin-top:30px;"><a href="#payment" class="btn-p">Записаться в ансамбль</a></div>
+    </div>
+    <div class="sgrid rv">
+      <div class="stat"><div class="snum">20+</div><div class="slb">Лет на сцене</div></div>
+      <div class="stat"><div class="snum">40+</div><div class="slb">Артистов</div></div>
+      <div class="stat"><div class="snum">30+</div><div class="slb">Танцев</div></div>
+      <div class="stat"><div class="snum">500+</div><div class="slb">Выступлений</div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- TICKER -->
+<div class="tkw">
+  <div class="tkt">
+    <span class="ti">Армянский танец</span><span class="ti">Հայկական Պար</span><span class="ti">Ансамбль Звартноц</span><span class="ti">Կոչարի</span><span class="ti">Народное наследие</span><span class="ti">Շալախո</span><span class="ti">Живая традиция</span><span class="ti">Հայ Արվեստ</span>
+    <span class="ti">Армянский танец</span><span class="ti">Հայկական Պար</span><span class="ti">Ансамбль Звартноц</span><span class="ti">Կոչարի</span><span class="ti">Народное наследие</span><span class="ti">Շалախо</span><span class="ti">Живая традиция</span><span class="ti">Հայ Արվեստ</span>
+  </div>
+</div>
+
+<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
+
+<!-- TEAM -->
+<div class="team-wrap" id="team">
+<div class="team-inner">
+  <div class="slbl">Руководство</div>
+  <h2 class="stit">Сердце <em>ансамбля</em></h2>
+  <p style="font-size:17.5px;font-weight:300;color:var(--cd);max-width:520px;line-height:1.82;margin-top:8px;">Мастера, которые вложили душу в каждое движение и передают искусство армянского танца из поколения в поколение.</p>
+  <div class="csel-wrap" id="csw">
+    <button class="cbtn prev" id="cp">‹</button>
+    <div class="csel-track" id="ct">
+      <div class="tc rv"><div class="tav">👩‍🎨</div><div class="tnm">Сусан Хачатрян</div><div class="trl">Художественный руководитель</div><p class="tbi">Заслуженный работник культуры. Более 25 лет посвятила сохранению армянского народного танца. Выпускница Ереванского института искусств.</p></div>
+      <div class="tc rv"><div class="tav">🎭</div><div class="tnm">Арам Петросян</div><div class="trl">Главный хореограф</div><p class="tbi">Хореограф с 18-летним стажем, автор оригинальных постановок, лауреат международных фестивалей народного танца.</p></div>
+      <div class="tc rv"><div class="tav">🎵</div><div class="tnm">Вардан Григорян</div><div class="trl">Музыкальный руководитель</div><p class="tbi">Мастер дудука и тара. Возрождает аутентичные армянские мелодии, создавая живое музыкальное сопровождение для современной сцены.</p></div>
+      <div class="tc rv"><div class="tav">👗</div><div class="tnm">Лусине Саргсян</div><div class="trl">Художник по костюмам</div><p class="tbi">Создаёт исторически достоверные костюмы всех регионов Армении. Каждый наряд — произведение искусства, воссоздающее традицию.</p></div>
+      <div class="tc rv"><div class="tav">🌟</div><div class="tnm">Нарине Авакян</div><div class="trl">Педагог детской группы</div><p class="tbi">Воспитала более 200 юных танцоров. Передаёт любовь к армянской культуре детям с самого раннего возраста.</p></div>
+    </div>
+    <button class="cbtn next" id="cn">›</button>
+  </div>
+  <div class="cdots" id="cd"></div>
+</div>
+</div>
+
+<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
+
+<!-- EVENTS -->
+<div class="ev-wrap" id="events">
+<div class="sec">
+  <div class="slbl">Концерты и мероприятия</div>
+  <h2 class="stit">Ближайшие <em>выступления</em></h2>
+  <div class="evg">
+    <div class="evc rv"><div class="evd"><div class="evdy">18</div><div class="evmo">Май</div></div><div><div class="evt">День Победы армянского народа</div><div class="evl">📍 Дворец культуры, Главный зал</div><span class="evtg">Гала-концерт</span></div></div>
+    <div class="evc rv"><div class="evd"><div class="evdy">01</div><div class="evmo">Июн</div></div><div><div class="evt">Фестиваль «Армянское лето»</div><div class="evl">📍 Летний амфитеатр, открытая сцена</div><span class="evtg">Фестиваль</span></div></div>
+    <div class="evc rv"><div class="evd"><div class="evdy">15</div><div class="evmo">Июн</div></div><div><div class="evt">Концерт к 30-летию общины</div><div class="evl">📍 Армянская церковь Сурб Хач</div><span class="evtg">Юбилей</span></div></div>
+    <div class="evc rv"><div class="evd"><div class="evdy">28</div><div class="evmo">Июн</div></div><div><div class="evt">Мастер-класс: армянский танец</div><div class="evl">📍 Студия Звартноц, запись обязательна</div><span class="evtg">Мастер-класс</span></div></div>
+    <div class="evc rv"><div class="evd"><div class="evdy">12</div><div class="evmo">Июл</div></div><div><div class="evt">Вардавар — Праздник воды</div><div class="evl">📍 Центральная площадь</div><span class="evtg">Народный праздник</span></div></div>
+    <div class="evc rv"><div class="evd"><div class="evdy">09</div><div class="evmo">Авг</div></div><div><div class="evt">Открытый урок для всех желающих</div><div class="evl">📍 Студия Звартноц — бесплатно</div><span class="evtg">Открытый урок</span></div></div>
+  </div>
+</div>
+</div>
+
+<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
+
+<!-- GALLERY -->
+<div class="gal-wrap" id="gallery">
+<div class="sec">
+  <div class="slbl">Галерея</div>
+  <h2 class="stit">Жизнь <em>ансамбля</em></h2>
+  <p style="font-size:17.5px;font-weight:300;color:var(--cd);max-width:520px;line-height:1.82;margin-top:8px;">Концерты, репетиции, закулисье — моменты, которые живут вечно.</p>
+  <div class="gtabs">
+    <button class="gtab on"  onclick="gt(this)">Все</button>
+    <button class="gtab"     onclick="gt(this)">Концерты</button>
+    <button class="gtab"     onclick="gt(this)">Репетиции</button>
+    <button class="gtab"     onclick="gt(this)">Закулисье</button>
+    <button class="gtab"     onclick="gt(this)">Видео</button>
+  </div>
+  <div class="ggrid rv">
+    <div class="gi w"><div class="gph">🎭<div class="gcap">Гала-концерт 2024</div></div></div>
+    <div class="gi t"><div class="gph">👗<div class="gcap">Национальные костюмы</div></div></div>
+    <div class="gi">  <div class="gph">🎶<div class="gcap">Репетиция</div></div></div>
+    <div class="gi">  <div class="gph">🌟<div class="gcap">Шалахо</div></div></div>
+    <div class="gi w"><div class="gph">🏔️<div class="gcap">Фестиваль «Армянское лето»</div></div></div>
+    <div class="gi">  <div class="gph">▶️<div class="gcap">Видео · Кочари</div></div></div>
+    <div class="gi">  <div class="gph">🌸<div class="gcap">Харси Пар</div></div></div>
+    <div class="gi">  <div class="gph">📸<div class="gcap">За кулисами</div></div></div>
+  </div>
+  <p class="ghint">* Ячейки галереи заменяются реальными фото и видео по мере добавления</p>
+</div>
+</div>
+
+<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
+
+<!-- PAYMENT -->
+<div class="pay-wrap" id="payment">
+<div class="sec">
+  <div class="slbl">Оплата занятий</div>
+  <h2 class="stit">Онлайн-<em>оплата</em></h2>
+  <p style="font-size:17.5px;font-weight:300;color:var(--cd);max-width:580px;line-height:1.82;margin-top:8px;">Заполните ФИО и email — на почту придёт чек после оплаты занятий.</p>
+  <div class="payform rv">
+    <p class="payform-hint">Данные для чека и связи с вами</p>
+    <div class="payform-grid">
+      <div class="ff">
+        <label class="flbl" for="payFio">ФИО полностью</label>
+        <input class="fi" type="text" id="payFio" name="payFio" placeholder="Иванов Иван Иванович" autocomplete="name">
+      </div>
+      <div class="ff">
+        <label class="flbl" for="payEmail">Email для чека</label>
+        <input class="fi" type="email" id="payEmail" name="payEmail" placeholder="name@example.com" autocomplete="email" inputmode="email">
+      </div>
+    </div>
+  </div>
+  <div class="paycta rv">
+    <button type="button" class="btn-p" style="min-width:220px;" onclick="payNow()">Оплатить</button>
+  </div>
+</div>
+</div>
+
+<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
+
+<!-- INSTAGRAM -->
+<div class="ig-wrap" id="instagram">
+<div class="sec">
+  <div class="slbl slbl-c">Следите за нами</div>
+  <h2 class="stit stit-c">Мы в <em>Instagram</em></h2>
+  <p style="font-size:17.5px;font-weight:300;line-height:1.82;color:var(--cd);max-width:520px;margin:0 auto;text-align:center;">Репетиции, выступления, закулисье — подписывайтесь, чтобы не пропустить ни одного момента.</p>
+  <div class="iglinks">
+    <a href="https://www.instagram.com/armyanskie_tanci_zvartnoc" target="_blank" class="iglink">
+      <svg class="igico" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      @armyanskie_tanci_zvartnoc
+    </a>
+    <a href="https://www.instagram.com/harsi.par.zvartnoc" target="_blank" class="iglink">
+      <svg class="igico" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      @harsi.par.zvartnoc
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
+
+<!-- CONTACT -->
+<div id="contact">
+<div class="sec">
+  <div class="slbl">Свяжитесь с нами</div>
+  <h2 class="stit">Запись & <em>Сотрудничество</em></h2>
+  <div class="cgrid">
+    <div class="fform rv">
+      <div class="ff"><label class="flbl">Ваше имя</label><input class="fi" type="text" placeholder="Арменуи Саргсян"></div>
+      <div class="ff"><label class="flbl">Телефон / Email</label><input class="fi" type="text" placeholder="+7 __________"></div>
+      <div class="ff">
+        <label class="flbl">Тема обращения</label>
+        <select class="fsel fi">
+          <option value="">— Выберите —</option>
+          <option>Запись в ансамбль (взрослые)</option>
+          <option>Запись детей</option>
+          <option>Вопрос об оплате</option>
+          <option>Приглашение на мероприятие</option>
+          <option>Мастер-класс</option>
+          <option>Сотрудничество / СМИ</option>
+          <option>Другое</option>
+        </select>
+      </div>
+      <div class="ff"><label class="flbl">Сообщение</label><textarea class="fta" placeholder="Расскажите о вашем запросе..."></textarea></div>
+      <button class="fsub">Отправить сообщение</button>
+    </div>
+    <div class="cinfo rv">
+      <div class="ci"><div class="cico">📱</div><div><div class="cll">Instagram</div><div class="clv">@armyanskie_tanci_zvartnoc<br>@harsi.par.zvartnoc</div></div></div>
+      <div class="ci"><div class="cico">🕐</div><div><div class="cll">Расписание репетиций</div><div class="clv">Вт, Чт: 18:00 — 21:00<br>Суббота: 11:00 — 14:00</div></div></div>
+      <div class="ci"><div class="cico">🎭</div><div><div class="cll">Приглашаем</div><div class="clv">Участников от 6 лет.<br>Опыт не обязателен — обучаем с нуля.</div></div></div>
+      <div class="ci"><div class="cico">🤝</div><div><div class="cll">Организаторам</div><div class="clv">Выезжаем на свадьбы, корпоративы,<br>праздники и фестивали.</div></div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="flrow">
+    <img src="assets/images/logo.png" class="flimg" alt="Звартноц">
+    <div class="fltxt">ЗВАРТНОЦ</div>
+  </div>
+  <div class="fsub2">Армянский народный ансамбль танцев</div>
+  <ul class="flinks">
+    <li><a href="#about">О нас</a></li>
+    <li><a href="#team">Руководство</a></li>
+    <li><a href="#events">Концерты</a></li>
+    <li><a href="#gallery">Галерея</a></li>
+    <li><a href="#payment">Оплата</a></li>
+    <li><a href="#contact">Контакт</a></li>
+  </ul>
+  <div class="farm">Զվարթնոց · Армянский дух живёт в танце</div>
+  <div class="fflag">
+    <div style="background:#D90012;"></div>
+    <div style="background:#0033A0;"></div>
+    <div style="background:#FF9E1B;"></div>
+  </div>
+  <div class="fcpy">© 2025 АНСАМБЛЬ ЗВАРТНОЦ · ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
+</footer>
+
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
