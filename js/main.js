@@ -74,21 +74,3 @@ window.addEventListener('resize',()=>{ci=0;mkdots();go(0);});
 
 /* gallery tabs */
 function gt(el){document.querySelectorAll('.gtab').forEach(t=>t.classList.remove('on'));el.classList.add('on');}
-
-const PAYMENT_CHECKOUT_URL='';
-function payNow(){
-  const elFio=document.getElementById('payFio');
-  const elEmail=document.getElementById('payEmail');
-  const fio=elFio?elFio.value.trim():'';
-  const email=elEmail?elEmail.value.trim():'';
-  if(!fio){alert('Укажите ФИО — так мы сформируем чек.');if(elFio)elFio.focus();return;}
-  if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){alert('Укажите корректный email — на него отправим чек.');if(elEmail)elEmail.focus();return;}
-  if(PAYMENT_CHECKOUT_URL){
-    const u=new URL(PAYMENT_CHECKOUT_URL,window.location.origin);
-    u.searchParams.set('customer_name',fio);
-    u.searchParams.set('customer_email',email);
-    window.location.href=u.toString();
-    return;
-  }
-  alert(`ФИО: ${fio}\nEmail для чека: ${email}\n\nПодключите ссылку на оплату: в коде страницы задайте переменную PAYMENT_CHECKOUT_URL (Stripe, ЮKassa и т.д.). Пока можно написать нам в Instagram или через форму «Контакт».`);
-}

@@ -38,4 +38,3 @@ python3 -m http.server 8080
 
 - Тексты и разметка — в `index.html`.
 - Внешний вид — в `css/main.css`.
-- Онлайн-оплата: в `js/main.js` задайте URL в переменной `PAYMENT_CHECKOUT_URL`, когда появится платёжная ссылка.
