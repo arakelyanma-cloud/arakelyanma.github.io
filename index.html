@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ансамбль армянского народного танца «Звартноц» в Москве: концерты, руководство, запись в коллектив.">
+<meta name="description" content="Ансамбль армянского народного танца «Звартноц» в Москве: руководство, галерея, запись в коллектив.">
 <title>Ансамбль Звартноц — Москва | Армянские народные танцы</title>
 <script>
 (function(){
@@ -18,7 +18,7 @@
   }
 })();
 </script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;900&family=Noto+Serif:wght@400;600;700&family=Noto+Serif+Armenian:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -32,7 +32,6 @@
   <ul class="nl-list">
     <li><a href="#about">О нас</a></li>
     <li><a href="#team">Руководство</a></li>
-    <li><a href="#events">Концерты</a></li>
     <li><a href="#gallery">Галерея</a></li>
     <li><a href="#contact">Контакт</a></li>
   </ul>
@@ -49,7 +48,6 @@
   <button class="mob-close" id="mc">✕</button>
   <a href="#about"   onclick="cm()">О нас</a>
   <a href="#team"    onclick="cm()">Руководство</a>
-  <a href="#events"  onclick="cm()">Концерты</a>
   <a href="#gallery" onclick="cm()">Галерея</a>
   <a href="#contact" onclick="cm()">Контакт</a>
 </div>
@@ -63,11 +61,11 @@
     <img src="assets/images/logo.png" alt="Логотип Звартноц" class="hlogo">
     <div class="heyb">Армянский народный ансамбль</div>
     <h1 class="htit">ЗВАРТНОЦ</h1>
-    <div class="harm">Զվարթնոց</div>
+    <div class="harm" lang="hy">Զվարթնոց</div>
     <p class="hloc"><span class="hloc-i">г. Москва</span></p>
     <p class="hsub">Хранители живого наследия армянского танца —<br>от величественного Берда до огненного Шалахо,<br>мы несём душу Армении через движение.</p>
     <div class="hbtns">
-      <a href="#events"  class="btn-p">Ближайшие концерты</a>
+      <a href="#gallery" class="btn-p">Галерея</a>
       <a href="#contact" class="btn-o">Записаться</a>
     </div>
   </div>
@@ -86,15 +84,15 @@
   <div class="agrid">
     <div class="atext">
       <div class="slbl">История ансамбля</div>
-      <h2 class="stit">Душа <em>Армении</em><br>в каждом движении</h2>
+      <h2 class="stit">Душа <em>армянского народа</em><br>в каждом движении</h2>
       <p>Ансамбль <strong>«Звартноц»</strong> — коллектив в <strong>Москве</strong>, живое воплощение тысячелетней культуры армянского народа. Наше имя восходит к легендарному храму VII века — <em>«Храму Бдящих Сил»</em>.</p>
       <p>Мы бережно сохраняем и популяризируем <strong>армянский народный танец</strong> — от торжественных хороводов до зажигательных свадебных обрядов, от лирических женских до мощных мужских постановок.</p>
       <p>Каждый костюм, каждый жест, каждый ритм — послание из глубины веков, которое мы с гордостью передаём новым поколениям.</p>
       <div style="margin-top:30px;"><a href="#contact" class="btn-p">Записаться в ансамбль</a></div>
     </div>
     <div class="sgrid rv">
-      <div class="stat"><div class="snum">20+</div><div class="slb">Лет на сцене</div></div>
-      <div class="stat"><div class="snum">40+</div><div class="slb">Артистов</div></div>
+      <div class="stat"><div class="snum">30+</div><div class="slb">Лет на сцене</div></div>
+      <div class="stat"><div class="snum">200+</div><div class="slb">Артистов</div></div>
       <div class="stat"><div class="snum">30+</div><div class="slb">Танцев</div></div>
       <div class="stat"><div class="snum">500+</div><div class="slb">Выступлений</div></div>
     </div>
@@ -118,35 +116,39 @@
   <div class="slbl">Руководство</div>
   <h2 class="stit">Сердце <em>ансамбля</em></h2>
   <p style="font-size:17.5px;font-weight:300;color:var(--cd);max-width:520px;line-height:1.82;margin-top:8px;">Мастера, которые вложили душу в каждое движение и передают искусство армянского танца из поколения в поколение.</p>
-  <div class="csel-wrap" id="csw">
-    <button class="cbtn prev" id="cp">‹</button>
-    <div class="csel-track" id="ct">
-      <div class="tc rv"><div class="tav"><img src="assets/images/team-vanesyan-alvard.png" alt="Ванесян Алвард"></div><div class="tnm">Ванесян Алвард</div><div class="trl">Художественный руководитель</div><p class="tbi">Заслуженный работник культуры. Более 25 лет посвятила сохранению армянского народного танца. Выпускница Ереванского института искусств.</p></div>
-      <div class="tc rv"><div class="tav">🎭</div><div class="tnm">Арам Петросян</div><div class="trl">Главный хореограф</div><p class="tbi">Хореограф с 18-летним стажем, автор оригинальных постановок, лауреат международных фестивалей народного танца.</p></div>
-      <div class="tc rv"><div class="tav">🎵</div><div class="tnm">Вардан Григорян</div><div class="trl">Музыкальный руководитель</div><p class="tbi">Мастер дудука и тара. Возрождает аутентичные армянские мелодии, создавая живое музыкальное сопровождение для современной сцены.</p></div>
-      <div class="tc rv"><div class="tav">👗</div><div class="tnm">Лусине Саргсян</div><div class="trl">Художник по костюмам</div><p class="tbi">Создаёт исторически достоверные костюмы всех регионов Армении. Каждый наряд — произведение искусства, воссоздающее традицию.</p></div>
-      <div class="tc rv"><div class="tav">🌟</div><div class="tnm">Нарине Авакян</div><div class="trl">Педагог детской группы</div><p class="tbi">Воспитала более 200 юных танцоров. Передаёт любовь к армянской культуре детям с самого раннего возраста.</p></div>
+  <div class="team-pyramid" aria-label="Иерархия руководства">
+    <div class="tpy-glow" aria-hidden="true"></div>
+    <div class="tc tc-pyramid rv tpy-cap">
+      <div class="tav"><img src="assets/images/team-vanesyan-alvard.png" alt="Ванесян Алвард"></div>
+      <div class="tnm">Ванесян Алвард</div>
+      <div class="trl">Художественный руководитель</div>
+      <p class="tbi">Заслуженный работник культуры. Более 30 лет посвятила сохранению армянского народного танца.</p>
     </div>
-    <button class="cbtn next" id="cn">›</button>
-  </div>
-  <div class="cdots" id="cd"></div>
-</div>
-</div>
-
-<div class="div"><div class="div-c">✦ <s>❖</s> ✦ <s>❖</s> ✦</div></div>
-
-<!-- EVENTS -->
-<div class="ev-wrap" id="events">
-<div class="sec">
-  <div class="slbl">Концерты и мероприятия</div>
-  <h2 class="stit">Ближайшие <em>выступления</em></h2>
-  <div class="evg">
-    <div class="evc rv"><div class="evd"><div class="evdy">18</div><div class="evmo">Май</div></div><div><div class="evt">День Победы армянского народа</div><div class="evl">📍 Дворец культуры, Главный зал</div><span class="evtg">Гала-концерт</span></div></div>
-    <div class="evc rv"><div class="evd"><div class="evdy">01</div><div class="evmo">Июн</div></div><div><div class="evt">Фестиваль «Армянское лето»</div><div class="evl">📍 Летний амфитеатр, открытая сцена</div><span class="evtg">Фестиваль</span></div></div>
-    <div class="evc rv"><div class="evd"><div class="evdy">15</div><div class="evmo">Июн</div></div><div><div class="evt">Концерт к 30-летию общины</div><div class="evl">📍 Армянская церковь Сурб Хач</div><span class="evtg">Юбилей</span></div></div>
-    <div class="evc rv"><div class="evd"><div class="evdy">28</div><div class="evmo">Июн</div></div><div><div class="evt">Мастер-класс: армянский танец</div><div class="evl">📍 Студия Звартноц, запись обязательна</div><span class="evtg">Мастер-класс</span></div></div>
-    <div class="evc rv"><div class="evd"><div class="evdy">12</div><div class="evmo">Июл</div></div><div><div class="evt">Вардавар — Праздник воды</div><div class="evl">📍 Центральная площадь</div><span class="evtg">Народный праздник</span></div></div>
-    <div class="evc rv"><div class="evd"><div class="evdy">09</div><div class="evmo">Авг</div></div><div><div class="evt">Открытый урок для всех желающих</div><div class="evl">📍 Студия Звартноц — бесплатно</div><span class="evtg">Открытый урок</span></div></div>
+    <div class="tpy-join tpy-join-12" aria-hidden="true">
+      <span class="tpy-line-stem"></span>
+      <span class="tpy-line-bridge"></span>
+      <span class="tpy-line-drop tpy-drop-l"></span>
+      <span class="tpy-line-drop tpy-drop-r"></span>
+    </div>
+    <div class="tc tc-pyramid rv tpy-wing-l">
+      <div class="tav"><img src="assets/images/team-sargsyan-oganna.png" alt="Оганна Саргсян"></div>
+      <div class="tnm">Оганна Саргсян</div>
+      <div class="trl">Руководитель-хореограф филиалов</div>
+      <p class="tbi">Хореограф с 10-летним стажем, автор оригинальных постановок, лауреат международных фестивалей народного танца.</p>
+    </div>
+    <div class="tc tc-pyramid rv tpy-wing-r">
+      <div class="tav"><img src="assets/images/team-melkonyan-eduard.png" alt="Эдуард Мелконян"></div>
+      <div class="tnm">Эдуард Мелконян</div>
+      <div class="trl">Руководитель-балетмейстер филиалов</div>
+      <p class="tbi">Более 10 лет посвятил развитию и популяризации армянского народного танца, воспитанию профессиональных кадров и сценическому воплощению национальной хореографии.</p>
+    </div>
+    <div class="tpy-join tpy-join-23" aria-hidden="true"><span class="tpy-line-stem tpy-line-stem-short"></span></div>
+    <div class="tc tc-pyramid rv tpy-base">
+      <div class="tav"><img src="assets/images/team-burmistrova-alisa.png" alt="Алиса Бурмистрова"></div>
+      <div class="tnm">Алиса Бурмистрова</div>
+      <div class="trl">Педагог</div>
+      <p class="tbi">Более 2 лет передаёт мастерство воспитанникам ансамбля, сама являясь его выпускницей, прошедшей путь от 4 лет до профессионального становления.</p>
+    </div>
   </div>
 </div>
 </div>
@@ -158,25 +160,61 @@
 <div class="sec">
   <div class="slbl">Галерея</div>
   <h2 class="stit">Жизнь <em>ансамбля</em></h2>
-  <p style="font-size:17.5px;font-weight:300;color:var(--cd);max-width:520px;line-height:1.82;margin-top:8px;">Концерты, репетиции, закулисье — моменты, которые живут вечно.</p>
-  <div class="gtabs">
-    <button class="gtab on"  onclick="gt(this)">Все</button>
-    <button class="gtab"     onclick="gt(this)">Концерты</button>
-    <button class="gtab"     onclick="gt(this)">Репетиции</button>
-    <button class="gtab"     onclick="gt(this)">Закулисье</button>
-    <button class="gtab"     onclick="gt(this)">Видео</button>
+  <div class="gtabs" role="tablist" aria-label="Фильтр галереи">
+    <button type="button" class="gtab on" data-filter="all" onclick="gt(this)" role="tab" aria-selected="true">Все</button>
+    <button type="button" class="gtab" data-filter="concerts" onclick="gt(this)" role="tab" aria-selected="false">Концерты</button>
+    <button type="button" class="gtab" data-filter="rehearsal" onclick="gt(this)" role="tab" aria-selected="false">Репетиции</button>
+    <button type="button" class="gtab" data-filter="backstage" onclick="gt(this)" role="tab" aria-selected="false">Закулисье</button>
   </div>
-  <div class="ggrid rv">
-    <div class="gi w"><div class="gph">🎭<div class="gcap">Гала-концерт 2024</div></div></div>
-    <div class="gi t"><div class="gph">👗<div class="gcap">Национальные костюмы</div></div></div>
-    <div class="gi">  <div class="gph">🎶<div class="gcap">Репетиция</div></div></div>
-    <div class="gi">  <div class="gph">🌟<div class="gcap">Шалахо</div></div></div>
-    <div class="gi w"><div class="gph">🏔️<div class="gcap">Фестиваль «Армянское лето»</div></div></div>
-    <div class="gi">  <div class="gph">▶️<div class="gcap">Видео · Кочари</div></div></div>
-    <div class="gi">  <div class="gph">🌸<div class="gcap">Харси Пар</div></div></div>
-    <div class="gi">  <div class="gph">📸<div class="gcap">За кулисами</div></div></div>
+  <div class="ggrid rv" id="ggrid">
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-feature-01.png" alt="" fetchpriority="high" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-feature-02.png" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-feature-03.png" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-001.jpeg?v=2" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-002.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-003.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-004.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-005.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-006.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-007.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-008.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-009.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-010.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-011.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-012.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-013.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-014.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-015.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-016.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-017.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-018.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-019.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-020.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-021.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-022.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-023.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-024.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-025.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-026.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-027.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-028.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-029.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-030.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-031.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-032.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-033.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-034.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-035.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-036.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-037.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-038.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-039.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-040.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-041.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="backstage"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-042.jpeg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="concerts"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-043.jpg" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="gi" data-cat="rehearsal"><div class="gph"><img class="gph-img" src="assets/images/gallery/gallery-044.jpg" alt="" loading="lazy" decoding="async"></div></div>
   </div>
-  <p class="ghint">* Ячейки галереи заменяются реальными фото и видео по мере добавления</p>
 </div>
 </div>
 
@@ -205,34 +243,69 @@
 
 <!-- CONTACT -->
 <div id="contact">
-<div class="sec">
+<div class="sec contact-sec">
   <div class="slbl">Свяжитесь с нами</div>
-  <h2 class="stit">Запись & <em>Сотрудничество</em></h2>
-  <div class="cgrid">
-    <div class="fform rv">
-      <div class="ff"><label class="flbl">Ваше имя</label><input class="fi" type="text" placeholder="Арменуи Саргсян"></div>
-      <div class="ff"><label class="flbl">Телефон / Email</label><input class="fi" type="text" placeholder="+7 __________"></div>
-      <div class="ff">
-        <label class="flbl">Тема обращения</label>
-        <select class="fsel fi">
-          <option value="">— Выберите —</option>
-          <option>Запись в ансамбль (взрослые)</option>
-          <option>Запись детей</option>
-          <option>Приглашение на мероприятие</option>
-          <option>Мастер-класс</option>
-          <option>Сотрудничество / СМИ</option>
-          <option>Другое</option>
-        </select>
-      </div>
-      <div class="ff"><label class="flbl">Сообщение</label><textarea class="fta" placeholder="Расскажите о вашем запросе..."></textarea></div>
-      <button class="fsub">Отправить сообщение</button>
-    </div>
-    <div class="cinfo rv">
+  <h2 class="stit contact-stit">Запись & <em>Сотрудничество</em></h2>
+  <p class="contact-lead">Контакты, адреса репетиций и расположение всех филиалов на одной карте.</p>
+  <div class="contact-layout rv">
+    <div class="contact-panel">
+      <div class="cinfo">
       <div class="ci"><div class="cico">📱</div><div><div class="cll">Instagram</div><div class="clv">@armyanskie_tanci_zvartnoc<br>@harsi.par.zvartnoc</div></div></div>
-      <div class="ci"><div class="cico">🕐</div><div><div class="cll">Расписание репетиций</div><div class="clv">Вт, Чт: 18:00 — 21:00<br>Суббота: 11:00 — 14:00</div></div></div>
-      <div class="ci"><div class="cico">🎭</div><div><div class="cll">Приглашаем</div><div class="clv">Участников от 6 лет.<br>Опыт не обязателен — обучаем с нуля.</div></div></div>
+      <div class="ci"><div class="cico">📞</div><div><div class="cll">Телефон</div><div class="clv">+7 903 740-02-55<br>+7 967 035-61-08</div></div></div>
+      <div class="ci"><div class="cico">📍</div><div><div class="cll">Адреса филиалов</div><div class="clv">
+        <div class="caddr-list">
+          <div class="caddr-block">
+            <div class="caddr-h">м. Пролетарская</div>
+            <div class="caddr-gost">Москва — ул. Крутицкая, д. 10, стр. 1</div>
+            <div class="caddr-time"><strong>Занятия:</strong> вс 13:30–15:30</div>
+          </div>
+          <div class="caddr-block">
+            <div class="caddr-h">м. Котельники</div>
+            <div class="caddr-gost">Котельники — мкр Парковый, д. 5<br><span class="caddr-detail">школа «Навигатор»</span></div>
+            <div class="caddr-time"><strong>Занятия:</strong> чт 18:00–20:00 · вс 10:00–13:00</div>
+          </div>
+          <div class="caddr-block">
+            <div class="caddr-h">м. Планерная</div>
+            <div class="caddr-gost">Путилково (Красногорский округ) — 71-й км МКАД, стр. 16</div>
+            <div class="caddr-time"><strong>Занятия:</strong> вт и пт 17:00–20:00</div>
+          </div>
+          <div class="caddr-block">
+            <div class="caddr-h">м. Бульвар Дмитрия Донского</div>
+            <div class="caddr-gost">Москва — точный адрес зала сообщается при записи</div>
+            <div class="caddr-time"><strong>Занятия:</strong> пн и ср 17:00–19:00</div>
+          </div>
+          <div class="caddr-block caddr-block--extra">
+            <div class="caddr-h">Дополнительные площадки</div>
+            <ul class="caddr-bullets">
+              <li>г. Мытищи</li>
+              <li>г. Одинцово</li>
+              <li>район Солнцево, Москва</li>
+              <li>м. Домодедовская</li>
+            </ul>
+            <p class="caddr-map-hint">Ориентиры отмечены на карте ниже.</p>
+            <div class="caddr-extra">Адреса залов и дни занятий — по телефону при записи.</div>
+          </div>
+        </div>
+      </div></div></div>
+      <div class="ci"><div class="cico">🎭</div><div><div class="cll">Приглашаем</div><div class="clv">Приглашаем всех желающих.<br>Опыт не обязателен — обучаем с нуля.</div></div></div>
       <div class="ci"><div class="cico">🤝</div><div><div class="cll">Организаторам</div><div class="clv">Выезжаем на свадьбы, корпоративы,<br>праздники и фестивали.</div></div></div>
     </div>
+    </div>
+    <section class="contact-map-block" aria-labelledby="contact-map-heading">
+      <header class="contact-map-head">
+        <p class="contact-map-eyebrow">Как добраться</p>
+        <h3 class="contact-map-heading" id="contact-map-heading">Филиалы на карте</h3>
+        <div class="contact-map-line"></div>
+        <p class="contact-map-hint">Все точки можно открыть прямо в карте — постройте удобный маршрут.</p>
+      </header>
+      <div class="cmap-shell">
+        <div class="cmap-wrap">
+          <div class="cmap-box">
+            <iframe class="cmap" src="https://yandex.ru/map-widget/v1/?ll=37.567%2C55.710&amp;z=9&amp;l=map&amp;pt=37.658589%2C55.728961%2Cpm2rdm~37.863116%2C55.659793%2Cpm2rdm~37.395194%2C55.858943%2Cpm2rdm~37.5769%2C55.5693%2Cpm2rdm~37.7345%2C55.9084%2Cpm2rdm~37.386%2C55.642%2Cpm2rdm~37.2775%2C55.673%2Cpm2rdm~37.718%2C55.607%2Cpm2rdm" title="Карта филиалов «Звартноц»: Москва и область" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </div>
 </div>
@@ -249,7 +322,6 @@
   <ul class="flinks">
     <li><a href="#about">О нас</a></li>
     <li><a href="#team">Руководство</a></li>
-    <li><a href="#events">Концерты</a></li>
     <li><a href="#gallery">Галерея</a></li>
     <li><a href="#contact">Контакт</a></li>
   </ul>
@@ -259,7 +331,7 @@
     <div style="background:#0033A0;"></div>
     <div style="background:#FF9E1B;"></div>
   </div>
-  <div class="fcpy">© 2025 АНСАМБЛЬ ЗВАРТНОЦ · ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
+  <div class="fcpy">© 2026 АНСАМБЛЬ ЗВАРТНОЦ · ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
 </footer>
 
 
