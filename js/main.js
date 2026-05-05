@@ -25,13 +25,19 @@ document.getElementById('bgr').onclick=()=>mm.classList.add('open');
 document.getElementById('mc').onclick=()=>mm.classList.remove('open');
 function cm(){mm.classList.remove('open');}
 
-/* smooth scroll */
+/* smooth scroll — для #contact повторно выравниваем якорь: при прокрутке грузятся фото галереи и колонки растут */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
     const id=a.getAttribute('href');
     if(!id||id==='#')return;
     const t=document.querySelector(id);
-    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+    if(!t)return;
+    e.preventDefault();
+    t.scrollIntoView({behavior:'smooth',block:'start'});
+    if(id==='#contact'){
+      const snap=()=>{t.scrollIntoView({behavior:'auto',block:'start'});};
+      [380,900,2000,3500].forEach(ms=>setTimeout(snap,ms));
+    }
   });
 });
 
