@@ -83,6 +83,68 @@ const ro=new IntersectionObserver(es=>{
 },{threshold:.1});
 document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
 
+/* gallery masonry: плотная укладка без «балансировочных» дыр multicol */
+const ggrid=document.getElementById('ggrid');
+let gallLayRaf=0;
+function galleryColCount(){
+  const w=window.innerWidth;
+  if(w<=768)return 2;
+  if(w<=1024)return 3;
+  return 4;
+}
+function galleryHGap(){return 3;}
+function layoutGalleryMasonry(){
+  if(!ggrid)return;
+  const items=[...ggrid.querySelectorAll('.gi')].filter(el=>!el.hidden);
+  if(!items.length){
+    ggrid.classList.remove('ggrid--masonry');
+    ggrid.style.cssText='';
+    return;
+  }
+  ggrid.classList.add('ggrid--masonry');
+  const c=galleryColCount();
+  const hg=galleryHGap();
+  const W=ggrid.getBoundingClientRect().width;
+  const colW=Math.max(0,(W-hg*(c-1))/c);
+  const heights=new Array(c).fill(0);
+  items.forEach(el=>{
+    el.style.boxSizing='border-box';
+    el.style.position='absolute';
+    el.style.margin='0';
+    el.style.padding='0';
+    el.style.width=colW+'px';
+    let col=0;
+    let minH=heights[0];
+    for(let i=1;i<c;i++){
+      if(heights[i]<minH){
+        minH=heights[i];
+        col=i;
+      }
+    }
+    el.style.left=col*(colW+hg)+'px';
+    el.style.top=heights[col]+'px';
+    heights[col]+=el.offsetHeight;
+  });
+  ggrid.style.position='relative';
+  ggrid.style.width='100%';
+  ggrid.style.height=Math.max(...heights)+'px';
+}
+function scheduleGalleryLayout(){
+  cancelAnimationFrame(gallLayRaf);
+  gallLayRaf=requestAnimationFrame(()=>{
+    gallLayRaf=requestAnimationFrame(layoutGalleryMasonry);
+  });
+}
+if(ggrid){
+  scheduleGalleryLayout();
+  if(typeof ResizeObserver!=='undefined')new ResizeObserver(scheduleGalleryLayout).observe(ggrid);
+  ggrid.querySelectorAll('img').forEach(img=>{
+    img.addEventListener('load',scheduleGalleryLayout);
+    img.addEventListener('error',scheduleGalleryLayout);
+  });
+  window.addEventListener('resize',scheduleGalleryLayout,{passive:true});
+}
+
 /* gallery tabs */
 function gt(btn){
   const f=btn.getAttribute('data-filter')||'all';
@@ -94,4 +156,5 @@ function gt(btn){
     const c=it.getAttribute('data-cat')||'';
     it.hidden=(f!=='all'&&c!==f);
   });
+  scheduleGalleryLayout();
 }
