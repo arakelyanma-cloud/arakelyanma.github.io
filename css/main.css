@@ -185,8 +185,8 @@ html[data-theme="dark"] .tpy-glow{background:linear-gradient(165deg,rgba(201,168
 .gtab.on,.gtab:hover{color:var(--go);border-bottom-color:var(--go);}
 .gtab.on{background:linear-gradient(180deg,rgba(139,26,26,.06),transparent);}
 html[data-theme="dark"] .gtab.on{background:linear-gradient(180deg,rgba(201,168,76,.08),transparent);}
-.ggrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;width:100%;align-items:start;}
-.gi{display:block;width:100%;min-width:0;margin:0;padding:0;line-height:0;overflow:visible;}
+.ggrid{display:block;width:100%;overflow:visible;column-count:4;column-gap:4px;-webkit-column-count:4;-webkit-column-gap:4px;-moz-column-count:4;-moz-column-gap:4px;}
+.gi{display:block;box-sizing:border-box;width:100%;max-width:100%;margin:0 0 4px;padding:0;line-height:0;break-inside:avoid;page-break-inside:avoid;-webkit-column-break-inside:avoid;overflow:visible;}
 .gi:hover,.gi:focus-within{z-index:1;box-shadow:0 0 0 1px rgba(201,168,76,.5);}
 html[data-theme="dark"] .gi:hover,html[data-theme="dark"] .gi:focus-within{box-shadow:0 0 0 1px rgba(201,168,76,.42);}
 .gph{display:block;margin:0;padding:0;line-height:0;background:transparent;border:none;overflow:visible;max-height:none;}
@@ -284,7 +284,7 @@ footer{background:var(--footer-bg);border-top:1px solid var(--bd);padding:60px 4
 
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:1024px){
-  .ggrid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .ggrid{column-count:3;-webkit-column-count:3;-moz-column-count:3;}
   .team-pyramid{padding:8px 32px 52px;}
 }
 @media(max-width:768px){
@@ -302,7 +302,8 @@ footer{background:var(--footer-bg);border-top:1px solid var(--bd);padding:60px 4
   .tpy-join-12 .tpy-line-stem{height:32px;}
   .tpy-glow{opacity:.65;height:clamp(620px,88vh,900px);}
   .agrid{grid-template-columns:1fr;gap:38px;}
-  .ggrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:3px;}
+  .ggrid{column-count:2;-webkit-column-count:2;-moz-column-count:2;column-gap:3px;-webkit-column-gap:3px;-moz-column-gap:3px;}
+  .gi{margin-bottom:3px;}
   .flinks{gap:22px;}
   .iglinks{flex-direction:column;align-items:center;}
   .contact-sec{padding-top:72px;padding-bottom:84px;}
