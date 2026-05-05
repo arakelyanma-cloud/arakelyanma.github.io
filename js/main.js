@@ -17,7 +17,17 @@ setThemeLabel();
 
 /* nav scroll */
 const nb=document.getElementById('nb');
-window.addEventListener('scroll',()=>nb.classList.toggle('sc',scrollY>60));
+if(nb){
+  let navScPending=false;
+  window.addEventListener('scroll',()=>{
+    if(navScPending)return;
+    navScPending=true;
+    requestAnimationFrame(()=>{
+      nb.classList.toggle('sc',scrollY>60);
+      navScPending=false;
+    });
+  },{passive:true});
+}
 
 /* mobile menu */
 const mm=document.getElementById('mm');
